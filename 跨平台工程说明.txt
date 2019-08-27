@@ -1,1 +1,1 @@
-EPAS.Component和EPAS.Plugins会涉及跨平台问题
+User .net Core
