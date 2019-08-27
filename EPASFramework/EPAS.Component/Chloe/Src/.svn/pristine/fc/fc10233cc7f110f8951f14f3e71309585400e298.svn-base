@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <Version>2.11.1.0</Version>
+    <Description>A lightweight and high-performance Object/Relational Mapping(ORM) library.</Description>
+    <Copyright>Copyright 2016-2017.</Copyright>
+    <AssemblyVersion>2.11.0.0</AssemblyVersion>
+    <FileVersion>2.11.0.0</FileVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard1.6\.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Chloe\Chloe.csproj" />
+  </ItemGroup>
+
+</Project>

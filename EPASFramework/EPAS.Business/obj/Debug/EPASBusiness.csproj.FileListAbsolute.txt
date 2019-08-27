@@ -1,0 +1,5 @@
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPAS\bin\Debug\EPAS.dll
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPAS\bin\Debug\EPAS.pdb
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPAS\obj\Debug\EPASBusiness.csproj.CoreCompileInputs.cache
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPAS\obj\Debug\EPAS.dll
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPAS\obj\Debug\EPAS.pdb

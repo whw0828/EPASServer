@@ -1,0 +1,19 @@
+﻿{
+  "version": "1.0.4-*",
+  "authors": [ "Chloe" ],
+  "description": "A lightweight and high-performance Object/Relational Mapping(ORM) library.",
+  "title": "Chloe.SQLite",
+  "copyright": "Copyright 2016.",
+
+  "dependencies": {
+    "Chloe": "1.0.4-*",
+    "NETStandard.Library": "1.6.0",
+    "System.Data.Common": "4.1.0"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}

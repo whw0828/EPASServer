@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>ChloeCore.Oracle</id>
+    <version>2.15.0</version>
+    <title>ChloeCore.Oracle</title>
+    <authors>Shuxin Qin</authors>
+    <owners>Shuxin Qin</owners>
+    <licenseUrl>https://github.com/shuxinqin/Chloe/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/shuxinqin/Chloe</projectUrl>
+    <iconUrl>http://images.cnblogs.com/cnblogs_com/so9527/860154/o_ORMicon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Oracle database provider for Chloe Core.</description>
+    <copyright>Copyright 2016-2017</copyright>
+    <tags>Chloe,ORM,Data,Core,Oracle</tags>
+
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="ChloeCore" version="2.15.0" />
+      </group>
+    </dependencies>
+
+  </metadata>
+  <files>
+    <file src="bin\Release\netstandard2.0\Chloe.Oracle.dll" target="lib\netstandard2.0"></file>
+  </files>
+</package>

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4987FE91-34AF-4367-8794-CF7F404B91BE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FPA</RootNamespace>
+    <AssemblyName>EPAS</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseEntityData\BaseEntityData.cs" />
+    <Compile Include="BaseEntityData\BaseEntityFac.cs" />
+    <Compile Include="BaseEntityData\PluginManager\PluginManager.cs" />
+    <Compile Include="BaseEntityData\ExcelFieldParam.cs" />
+    <Compile Include="BDA\AttendanceInfoData.cs" />
+    <Compile Include="BDA\CauseNGProductionApllyData.cs" />
+    <Compile Include="BDA\CauseNGProductionData.cs" />
+    <Compile Include="BDA\CauseNGPurchaseData.cs" />
+    <Compile Include="BDA\CauseOfNonconformingProductData.cs" />
+    <Compile Include="BDA\ClassFeedMaterialRecordData.cs" />
+    <Compile Include="BDA\ClassGroupData.cs" />
+    <Compile Include="BDA\ClassReceiveMaterialPlanData.cs" />
+    <Compile Include="BDA\ClassReceiveMaterialRecordData.cs" />
+    <Compile Include="BDA\ClassWorkMaterialBatchTraceData.cs" />
+    <Compile Include="BDA\ClassWorkPlanAPSTemplateData.cs" />
+    <Compile Include="BDA\ClassWorkPlanData.cs" />
+    <Compile Include="BDA\ClassWorkPlanRelationshipData.cs" />
+    <Compile Include="BDA\CustomerData.cs" />
+    <Compile Include="BDA\DataAuthData.cs" />
+    <Compile Include="BDA\EmployeeCapabilityMatrixData.cs" />
+    <Compile Include="BDA\EmployeeInfoData.cs" />
+    <Compile Include="BDA\FinishPackingData.cs" />
+    <Compile Include="BDA\FinishPackingDetailData.cs" />
+    <Compile Include="BDA\MaterialNumberData.cs" />
+    <Compile Include="BDA\MenuInfoData.cs" />
+    <Compile Include="BDA\MsgChannelData.cs" />
+    <Compile Include="BDA\PostRecordData.cs" />
+    <Compile Include="BDA\ProduceHandoverListData.cs" />
+    <Compile Include="BDA\ProductionData.cs" />
+    <Compile Include="BDA\ProductionMakeMaterialBarcodeData.cs" />
+    <Compile Include="BDA\ProductionMakeWorkOrderData.cs" />
+    <Compile Include="BDA\ProductionMakeWorkOrderRelationData.cs" />
+    <Compile Include="BDA\ProductionMaterialBarcodeRelationshipData.cs" />
+    <Compile Include="BDA\ProductionOperationRecordData.cs" />
+    <Compile Include="BDA\ProductionOrderBatchData.cs" />
+    <Compile Include="BDA\ProductionResourceData.cs" />
+    <Compile Include="BDA\ProductionOrderData.cs" />
+    <Compile Include="BDA\ProductionPackingIntoWarhouseData.cs" />
+    <Compile Include="BDA\ProductionReceiveMaterialBarcodeData.cs" />
+    <Compile Include="BDA\ProductionVersionData.cs" />
+    <Compile Include="BDA\PublicCodeInfoData.cs" />
+    <Compile Include="BDA\QCBarCodeLockData.cs" />
+    <Compile Include="BDA\QCItemTypeData.cs" />
+    <Compile Include="BDA\QCSuspiciousProductRecordData.cs" />
+    <Compile Include="BDA\RealLoginUserInfoData.cs" />
+    <Compile Include="BDA\RoleAuthManageData.cs" />
+    <Compile Include="BDA\RoleInfoData.cs" />
+    <Compile Include="BDA\RoleMenuRelationshipData.cs" />
+    <Compile Include="BDA\SampleProductionQCRecordData.cs" />
+    <Compile Include="BDA\ScrapNoticeInfoData.cs" />
+    <Compile Include="BDA\SerialNumbersData.cs" />
+    <Compile Include="BDA\SupplierInfoData.cs" />
+    <Compile Include="BDA\UserInfoData.cs" />
+    <Compile Include="BDA\UserRoleRelationshipData.cs" />
+    <Compile Include="BDA\WorkOrderData.cs" />
+    <Compile Include="BDA\WorkOrderMaterialInData.cs" />
+    <Compile Include="BDA\WorkOrderOutProductData.cs" />
+    <Compile Include="BDA\WorkOrderParamData.cs" />
+    <Compile Include="BDA\WorkOrderPositionData.cs" />
+    <Compile Include="BDA\WorkOrderProductionInstructionData.cs" />
+    <Compile Include="BDA\WorkOrderProductionResourceData.cs" />
+    <Compile Include="BDA\WorkParamRecordData.cs" />
+    <Compile Include="BDA\WorkPositionData.cs" />
+    <Compile Include="Business\APS\APSBusiness.cs" />
+    <Compile Include="Business\ProductionOrder\ProductionOrderBusiness.cs" />
+    <Compile Include="Utilities\BusinessHelper.cs" />
+    <Compile Include="Utilities\DataTableHelper.cs" />
+    <Compile Include="Business\BaseBusiness\BaseBusinessObject.cs" />
+    <Compile Include="Business\BaseData\ProductionBusiness.cs" />
+    <Compile Include="Business\BaseData\ProductionVersion\ProductionVersionComBusiness.cs" />
+    <Compile Include="Business\System\UserRoleRelationshipBusiness.cs" />
+    <Compile Include="Business\System\SystemBusiness.cs" />
+    <Compile Include="Business\View\BarCodeBaseView.cs" />
+    <Compile Include="Business\View\MaterialBaseView.cs" />
+    <Compile Include="Business\View\OperatorBaseView.cs" />
+    <Compile Include="License\EPASLicense.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Business\AccurateTracing\" />
+    <Folder Include="Business\BarCode\" />
+    <Folder Include="Business\ProductionExecution\" />
+    <Folder Include="Business\QC\" />
+    <Folder Include="Business\WorkPlan\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EPAS.DataEntity\EPAS.DataEntity.csproj">
+      <Project>{0cae3b31-cf2e-4f55-a39f-df056d5724e2}</Project>
+      <Name>EPAS.DataEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EPAS.Interface\EPAS.Interface.csproj">
+      <Project>{9758cb6d-36f5-43be-93ab-3ec314ac4ebf}</Project>
+      <Name>EPAS.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EPAS.Component\EPAS.Component.csproj">
+      <Project>{e0a29678-3020-4e8f-9cb5-a00f452f8896}</Project>
+      <Name>EPAS.Component</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EPAS.Enum\EPAS.Enum.csproj">
+      <Project>{D28A4948-9BF1-42CE-95A5-9240EF0AAD10}</Project>
+      <Name>EPAS.Enum</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EPAS.Plugins\EPAS.ChloePlugin\EPAS.ChloePlugin.csproj">
+      <Project>{1510e4d9-13ab-4bbd-94de-c160cb809518}</Project>
+      <Name>EPAS.ChloePlugin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EPAS.Plugins\EPAS.DirectSQLPlugin\EPAS.DirectSQLPlugin.csproj">
+      <Project>{e155d327-123e-4eff-b023-1867279210bb}</Project>
+      <Name>EPAS.DirectSQLPlugin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

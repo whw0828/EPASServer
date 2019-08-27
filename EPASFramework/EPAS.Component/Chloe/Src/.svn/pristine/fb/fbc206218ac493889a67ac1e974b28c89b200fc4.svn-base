@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>ChloeCore</id>
+    <version>2.16.0</version>
+    <title>ChloeCore</title>
+    <authors>Shuxin Qin</authors>
+    <owners>Shuxin Qin</owners>
+    <licenseUrl>https://github.com/shuxinqin/Chloe/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/shuxinqin/Chloe</projectUrl>
+    <iconUrl>http://images.cnblogs.com/cnblogs_com/so9527/860154/o_ORMicon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A lightweight and high-performance Object/Relational Mapping(ORM) library for .NET Core.</description>
+    <copyright>Copyright 2016-2017</copyright>
+    <tags>Chloe,ORM,Data,Core</tags>
+
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.Reflection.Emit" version="4.3.0" />
+      </group>
+    </dependencies>
+
+  </metadata>
+  <files>
+    <file src="bin\Release\netstandard2.0\Chloe.dll" target="lib\netstandard2.0"></file>
+  </files>
+</package>

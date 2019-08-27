@@ -1,0 +1,11 @@
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPAS.Enum\bin\Debug\EPAS.Enum.dll
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPAS.Enum\bin\Debug\EPAS.Enum.pdb
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPAS.Enum\obj\Debug\EPAS.Enum.dll
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPAS.Enum\obj\Debug\EPAS.Enum.pdb
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPAS.Enum\obj\Debug\EPAS.Enum.csproj.CoreCompileInputs.cache
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPAS.Enum\obj\Debug\EPAS.Enum.csprojAssemblyReference.cache
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Enum\bin\Debug\EPAS.Enum.dll
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Enum\bin\Debug\EPAS.Enum.pdb
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Enum\obj\Debug\EPAS.Enum.csproj.CoreCompileInputs.cache
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Enum\obj\Debug\EPAS.Enum.dll
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Enum\obj\Debug\EPAS.Enum.pdb

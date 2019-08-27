@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "EPAS.InterfaceCore/1.0.0": {
+        "dependencies": {
+          "EPAS.EnumCore": "1.0.0"
+        },
+        "runtime": {
+          "EPAS.InterfaceCore.dll": {}
+        }
+      },
+      "EPAS.EnumCore/1.0.0": {
+        "runtime": {
+          "EPAS.EnumCore.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EPAS.InterfaceCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EPAS.EnumCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

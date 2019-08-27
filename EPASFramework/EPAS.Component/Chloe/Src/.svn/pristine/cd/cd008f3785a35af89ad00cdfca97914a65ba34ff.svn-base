@@ -1,0 +1,30 @@
+* **2016-12-4**
+	* 支持 Oracle 数据库
+	* 实体支持继承
+	* 支持存储过程
+	* 重命名：NotAutoIncrementAttribute --> NonAutoIncrementAttribute
+	* 废弃 DbContext.CurrentSession 属性，取而代之 DbContext.Session
+	* IQuery 接口增加 TakePage 方法
+	* 内部代码结构调整
+	* 版本升级至 2.1.0
+
+* **2016-8-26**
+	* 版本升级至 2.0.0
+	* 发布 ChloeCore.MySql NuGet 包
+
+* **2016-8-8**
+	* 支持 SQLite 数据库
+	* .NET Ver update: 1.0.2
+	* .NET Core Ver update: 1.0.4
+
+* **2016-8-1**
+	* 支持 .NET Core
+    * 发行 NuGet 包
+      * .NET Ver: 1.0.1
+      * .NET Core Ver: 1.0.3
+
+* **2016-7-25**
+    * 支持 MySql 数据库
+
+* **2016-7-4**
+	* 正式开源

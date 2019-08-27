@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+    "Chloe": "2.1.0-*",
+    "Chloe.MySql": "2.1.0-*",
+    "Chloe.SQLite": "2.1.0-*",
+    "Chloe.SqlServer": "2.1.0-*",
+    "Microsoft.Data.Sqlite": "1.0.0",
+    "Microsoft.NETCore.App": {
+      "type": "platform",
+      "version": "1.0.0"
+    },
+    "MySql.Data.Core": "7.0.4-IR-191"
+  },
+
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": "dnxcore50"
+    }
+  }
+}

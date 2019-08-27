@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>ChloeCore.SqlServer</id>
+    <version>2.12.0</version>
+    <title>ChloeCore.SqlServer</title>
+    <authors>Shuxin Qin</authors>
+    <owners>Shuxin Qin</owners>
+    <licenseUrl>https://github.com/shuxinqin/Chloe/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/shuxinqin/Chloe</projectUrl>
+    <iconUrl>http://images.cnblogs.com/cnblogs_com/so9527/860154/o_ORMicon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>SQL Server database provider for Chloe Core.</description>
+    <copyright>Copyright 2016-2017</copyright>
+    <tags>Chloe,ORM,Data,Core,SqlServer</tags>
+
+    <dependencies>
+      <group targetFramework=".NETStandard1.6">
+        <dependency id="ChloeCore" version="2.12.0" />
+        <dependency id="System.Data.Common" version="4.1.0" />
+        <dependency id="System.Data.SqlClient" version="4.1.0" />
+      </group>
+    </dependencies>
+
+  </metadata>
+  <files>
+    <file src="bin\Release\netstandard1.6\Chloe.SqlServer.dll" target="lib\netstandard1.6"></file>
+  </files>
+</package>

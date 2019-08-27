@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\EPASFramework\EPAS.Interface\BusinessInterface\IBaseDataBusiness.cs" Link="BusinessInterface\IBaseDataBusiness.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Interface\BusinessInterface\ICustomQueryData.cs" Link="BusinessInterface\ICustomQueryData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Interface\BusinessInterface\IDataTransformation.cs" Link="BusinessInterface\IDataTransformation.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Interface\BusinessInterface\IProductionMaterial.cs" Link="BusinessInterface\IProductionMaterial.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Interface\BusinessInterface\IQueryData.cs" Link="BusinessInterface\IQueryData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Interface\BusinessInterface\ISynchroData.cs" Link="BusinessInterface\ISynchroData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Interface\PluginInterface\IDataPlugin.cs" Link="PluginInterface\IDataPlugin.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="BusinessInterface\" />
+    <Folder Include="PluginInterface\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EPAS.EnumCore\EPAS.EnumCore.csproj" />
+  </ItemGroup>
+
+</Project>

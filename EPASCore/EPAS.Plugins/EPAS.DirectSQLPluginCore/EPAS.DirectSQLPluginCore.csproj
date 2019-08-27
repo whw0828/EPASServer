@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\..\EPASFramework\EPAS.Plugins\EPAS.DirectSQLPlugin\DirectSQLPlugin.cs" Link="DirectSQLPlugin.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\EPAS.ComponentCore\EPAS.ComponentCore.csproj" />
+    <ProjectReference Include="..\..\EPAS.EnumCore\EPAS.EnumCore.csproj" />
+    <ProjectReference Include="..\..\EPAS.InterfaceCore\EPAS.InterfaceCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Dapper">
+      <HintPath>..\..\..\EPASFramework\EPAS.Component\CustomDataBase\Lib\Dapper.1.60.6\lib\netstandard2.0\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="DapperExtensions.Core">
+      <HintPath>..\..\..\EPASFramework\EPAS.Component\CustomDataBase\Lib\DapperExtensions.1.6.3\lib\netcoreapp2.1\DapperExtensions.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

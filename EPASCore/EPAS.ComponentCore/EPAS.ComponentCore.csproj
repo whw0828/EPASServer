@@ -1,0 +1,75 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath></OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\EPASFramework\EPAS.Component\AutoMapper\AutoMapperEx.cs" Link="AutoMapper\AutoMapperEx.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Component\Calendar\CalendarHelper.cs" Link="Calendar\CalendarHelper.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Component\CustomDataBase\DapperDbOperationBase.cs" Link="CustomDataBase\DapperDbOperationBase.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Component\CustomDataBase\DatabaseType.cs" Link="CustomDataBase\DatabaseType.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Component\CustomDataBase\DbConnectionHelper.cs" Link="CustomDataBase\DbConnectionHelper.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Component\CustomDataBase\IDbOperation.cs" Link="CustomDataBase\IDbOperation.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Component\CustomDataBase\PagingManager.cs" Link="CustomDataBase\PagingManager.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Component\CustomDataBase\TransResult.cs" Link="CustomDataBase\TransResult.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Component\Excel\ExcelHelper.cs" Link="Excel\ExcelHelper.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Component\Json\JsonUtil.cs" Link="Json\JsonUtil.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Component\DataHub\DataHubHelper.cs" Link="DataHub\DataHubHelper.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Component\Utilities\ObjectHelper.cs" Link="Utilities\ObjectHelper.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Component\Utilities\SplitHelper.cs" Link="Utilities\SplitHelper.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\EPASFramework\EPAS.Component\AutoMapper\Lib\netstandard2.0\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper">
+      <HintPath>..\..\EPASFramework\EPAS.Component\CustomDataBase\Lib\Dapper.1.60.6\lib\netstandard2.0\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="DapperExtensions.Core">
+      <HintPath>..\..\EPASFramework\EPAS.Component\CustomDataBase\Lib\DapperExtensions.1.6.3\lib\netcoreapp2.1\DapperExtensions.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Jil">
+      <HintPath>..\..\EPASFramework\EPAS.Component\Json\Jil.2.17.0\lib\netstandard2.0\Jil.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\..\EPASFramework\EPAS.Component\Excel\Lib\NPOI\NPOI.2.4.1\lib\netstandard2.0\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>..\..\EPASFramework\EPAS.Component\Excel\Lib\NPOI\NPOI.2.4.1\lib\netstandard2.0\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>..\..\EPASFramework\EPAS.Component\Excel\Lib\NPOI\NPOI.2.4.1\lib\netstandard2.0\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>..\..\EPASFramework\EPAS.Component\Excel\Lib\NPOI\NPOI.2.4.1\lib\netstandard2.0\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="DataHub">
+      <HintPath>..\..\EPASFramework\EPAS.Component\DataHub\lib\netstandard2.0\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Sigil">
+      <HintPath>..\..\EPASFramework\EPAS.Component\Json\Sigil.4.7.0\lib\netstandard1.5\Sigil.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CustomDataBase\" />
+    <Folder Include="Excel\" />
+    <Folder Include="AutoMapper\" />
+    <Folder Include="Json\" />
+    <Folder Include="DataHub\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="Calendar\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.6.0" />
+  </ItemGroup>
+
+</Project>

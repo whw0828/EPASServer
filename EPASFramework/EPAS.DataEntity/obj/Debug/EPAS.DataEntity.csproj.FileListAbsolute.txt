@@ -1,0 +1,7 @@
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.DataEntity\EPAS.DataEntity\obj\Debug\EPAS.DataEntity.csprojAssemblyReference.cache
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.DataEntity\EPAS.DataEntity\obj\Debug\EPAS.DataEntity.csproj.CoreCompileInputs.cache
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.DataEntity\bin\Debug\EPAS.DataEntity.dll
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.DataEntity\bin\Debug\EPAS.DataEntity.pdb
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.DataEntity\obj\Debug\EPAS.DataEntity.csproj.CoreCompileInputs.cache
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.DataEntity\obj\Debug\EPAS.DataEntity.dll
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.DataEntity\obj\Debug\EPAS.DataEntity.pdb

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\EPASFramework\EPAS.Enum\CustomEnable.cs" Link="CustomEnable.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Enum\DataPluginName.cs" Link="DataPluginName.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Enum\EnumAttribute.cs" Link="EnumAttribute.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Enum\EOPType.cs" Link="EOPType.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Enum\TimeUnit.cs" Link="TimeUnit.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Enum\Weeks.cs" Link="Weeks.cs" />
+  </ItemGroup>
+
+</Project>

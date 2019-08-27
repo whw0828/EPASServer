@@ -1,0 +1,16 @@
+* **2016-8-8**
+	* 支持 SQLite 数据库
+	* .NET Ver update: 1.0.2
+	* .NET Core Ver update: 1.0.4
+
+* **2016-8-1**
+	* 支持 .NET Core
+  * 发行 NuGet 包
+    * .NET Ver: 1.0.1
+    * .NET Core Ver: 1.0.3
+
+* **2016-7-25**
+  * 支持 MySql 数据库
+
+* **2016-7-4**
+	* 正式开源

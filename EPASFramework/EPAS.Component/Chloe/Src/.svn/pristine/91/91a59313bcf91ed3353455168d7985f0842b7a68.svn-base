@@ -1,0 +1,21 @@
+﻿{
+  "version": "1.0.4-*",
+  "authors": [ "Chloe" ],
+  "description": "A lightweight and high-performance Object/Relational Mapping(ORM) library.",
+  "title": "Chloe.ORM",
+  "copyright": "Copyright 2016.",
+
+  "dependencies": {
+    "NETStandard.Library": "1.6.0",
+    "System.Data.Common": "4.1.0",
+    "System.Reflection": "4.1.0",
+    "System.Reflection.Emit": "4.0.1",
+    "System.Reflection.TypeExtensions": "4.1.0"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}

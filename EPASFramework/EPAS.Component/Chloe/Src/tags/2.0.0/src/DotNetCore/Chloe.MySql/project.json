@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0-*",
+  "authors": [ "Chloe" ],
+  "description": "A lightweight and high-performance Object/Relational Mapping(ORM) library.",
+  "title": "Chloe.MySql",
+  "copyright": "Copyright 2016.",
+
+  "dependencies": {
+    "Chloe": "2.0.0-*",
+    "NETStandard.Library": "1.6.0",
+    "System.Data.Common": "4.1.0"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!--<TargetFramework>netstandard2.0</TargetFramework>-->
+    <!--<TargetFramework>net40</TargetFramework>-->
+    <TargetFrameworks>netstandard2.0;net40</TargetFrameworks>
+
+    <Version>3.9.0</Version>
+    <AssemblyVersion>3.9.0.0</AssemblyVersion>
+    <FileVersion>3.9.0.0</FileVersion>
+    <Description>A lightweight and high-performance Object/Relational Mapping(ORM) library.</Description>
+    <PackageId>Chloe.Oracle</PackageId>
+    <Product>Chloe.ORM</Product>
+    <Authors>Shuxin Qin</Authors>
+    <Copyright>Copyright 2016-2019.</Copyright>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <DefineConstants>NETCORE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net40'">
+    <DefineConstants>NETFX</DefineConstants>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\Chloe\Chloe.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net40'">
+  </ItemGroup>
+
+</Project>

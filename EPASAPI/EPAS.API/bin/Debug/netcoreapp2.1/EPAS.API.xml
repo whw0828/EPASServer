@@ -1,0 +1,315 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EPAS.API</name>
+    </assembly>
+    <members>
+        <member name="T:EPAS.API.Controllers.APSController">
+            <summary>
+            生产排程业务
+            </summary>
+        </member>
+        <member name="M:EPAS.API.Controllers.APSController.GetScheduleClassWorkPlan(System.DateTime,System.DateTime,System.Int32)">
+            <summary>
+            返回生产计划的进度信息
+            </summary>
+            <param name="dtStart">生产订单编号</param>
+            <param name="dtEnd">生产版本名称</param>
+            <param name="TaskSheetType">计划类型</param>
+            <returns></returns>
+        </member>
+        <member name="T:EPAS.API.Controllers.BaseEntityBusinessController">
+            <summary>
+            适用于基础数据实体操作
+            </summary>
+        </member>
+        <member name="M:EPAS.API.Controllers.BaseEntityBusinessController.GetGUIDSuffix">
+            <summary>
+            返回数据实体主键后缀,数据库表中主键命名规则：[表名称]+[后缀]。目前后缀 "Id"
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.BaseEntityBusinessController.GetAllEntitys(EPAS.DataEntity.API.OPEntityCmdBase)">
+            <summary>
+            返回数据实体中所有记录
+            </summary>
+            <param name="cmd">请求命令</param>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.BaseEntityBusinessController.GetEntityByField(EPAS.DataEntity.API.OPEntityCmdField)">
+            <summary>
+            返回数据实体中所有记录
+            </summary>
+            <param name="cmd">请求命令</param>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.BaseEntityBusinessController.GetEntityByBatchField(EPAS.DataEntity.API.OPEntityCmdBase)">
+            <summary>
+            返回数据实体中所有记录
+            </summary>
+            <param name="cmd">请求命令</param>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.BaseEntityBusinessController.NoTransactionOPEntitys(EPAS.DataEntity.API.OPEntityCmd)">
+            <summary>
+            实体定向业务 增、删、改操作
+            </summary>
+            <param name="cmd">OPEntityCmd</param>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.BaseEntityBusinessController.CheckSaveBaseDataEnable(EPAS.DataEntity.API.OPEntityCmdSaveCheck)">
+            <summary>
+            检查实体数据是否有重复项
+            </summary>
+            <param name="cmd">请求命令</param>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.BaseEntityBusinessController.SaveBaseData(EPAS.DataEntity.API.OPEntityCmdSave)">
+            <summary>
+            实体复合业务 增、改操作 针对Excel模式的数据保存
+            </summary>
+            <param name="cmd">OPEntityCmd</param>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.BaseEntityBusinessController.GetNewSerialNumber(System.String)">
+            <summary>
+            返回单号的流水号 例如 生产订单、工单、领料单、销售发货单等
+            </summary>
+            <param name="serialtype"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.BaseEntityBusinessController.GetServerTime">
+            <summary>
+            返回服务器端时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EPAS.API.Controllers.DefaultSystemController">
+            <summary>
+            适用于客户端框架未实现用户模块的场景
+            </summary>
+        </member>
+        <member name="M:EPAS.API.Controllers.DefaultSystemController.GetUserResetPassword">
+            <summary>
+            返回用户登录初始密码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.DefaultSystemController.GetMaxUserLevel">
+            <summary>
+            返回用户最高等级
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.DefaultSystemController.GetRootParentMenuId">
+            <summary>
+            返回菜单根节点名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.DefaultSystemController.GetAllMenus">
+            <summary>
+            返回系统所有菜单项
+            </summary>
+            <param name="参数">空</param>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.DefaultSystemController.MenusNoTransactionOPEntitys(EPAS.DataEntity.API.OPEntityCmd)">
+            <summary>
+            菜单实体 增删改操作
+            </summary>
+            <param name="cmd">OPEntityCmd</param>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.DefaultSystemController.InitDBData(EPAS.DataEntity.API.OPEntityCmdBase)">
+            <summary>
+            初始化数据库表中内容
+            </summary>
+            <param name="cmd">OPEntityCmd</param>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.DefaultSystemController.DeleteMenuTransaction(System.String,System.String)">
+            <summary>
+            删除一条菜单项  待定
+            </summary>
+            <param name="menuInfoId"></param>
+            <param name="newParentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.DefaultSystemController.GetAllRoleInfos">
+            <summary>
+            返回系统中所有角色信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.DefaultSystemController.GetMenusByUserId(System.String,System.String)">
+            <summary>
+            返回用户可以访问的菜单信息，由于存在 Byte序列化问题 请使用NewtonSoft Json。
+            </summary>
+            <param name="userId">用户ID</param>
+            <param name="languageCode">语言代码</param>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.DefaultSystemController.GetUserEntityByField(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="fieldName"></param>
+            <param name="fieldValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.DefaultSystemController.Login(System.String,System.String)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="userCode">工号</param>
+            <param name="password">密码</param>
+            <returns>1-"用户不能为空"，2-"密码不能为空"，3-"用户不存在"，4-"密码错误"，5-"登录成功"，6-"登录失败"</returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.DefaultSystemController.ApplicationExit(System.String)">
+             <summary>
+             用户退出业务
+             </summary>
+            <param name="userId">用户ID </param>
+             <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.DefaultSystemController.GetSubMenus(System.String,System.String)">
+             <summary>
+             获取父级下可以访问的子菜单
+             </summary>
+            <param name="parentId">菜单父级ID </param>
+            <param name="languageCode">语言代码 </param>
+             <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.DefaultSystemController.GetUserSubMenus(System.String,System.String,System.String)">
+             <summary>
+             获取父级下可以用户可以访问的子菜单
+             </summary>
+            <param name="userId">用户ID </param>
+            <param name="parentId">菜单父级ID </param>
+            <param name="languageCode">语言代码 </param>
+             <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.DefaultSystemController.SaveRoleMenuRelationship(EPAS.DataEntity.API.OPEntityCmdField)">
+            <summary>
+            保存角色跟菜单项的关系
+            </summary>
+            <param name="cmd">输入角色ID 和 菜单列</param>
+            <returns></returns>
+        </member>
+        <member name="T:EPAS.API.Controllers.ProductionOrderController">
+            <summary>
+            生产版本业务操作
+            </summary>
+        </member>
+        <member name="M:EPAS.API.Controllers.ProductionOrderController.GetLatestProductionOrder(System.Int32)">
+            <summary>
+            返回生产可用订单
+            </summary>
+            <param name="offsetday">向前可以查询订单的天数 默认30天</param>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.ProductionOrderController.InspectRegisterQty(System.String,System.String)">
+            <summary>
+            返回生产订单工序中在制品预定使用库存合计值
+            </summary>
+            <param name="ProductionOrderNumbe">生产订单编号</param>
+            <param name="WorkOrderOutProductId">工序产出品ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.ProductionOrderController.GetNotFinishedWorkPlan">
+            <summary>
+            返回未完成的工序工单（大计划） 大计划->日计划->设备日计划/人员日计划
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.ProductionOrderController.GetScheduleClassWorkPlan(System.String,System.String,System.Int32)">
+            <summary>
+            返回工单的进度信息
+            </summary>
+            <param name="ProductionOrderNumbe">生产订单编号</param>
+            <param name="ProductionVersionName">生产版本名称</param>
+            <param name="TaskSheetType">计划类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.ProductionOrderController.CalculationWorkPlan(EPAS.DataEntity.API.OPEntityCmdBase)">
+            <summary>
+            根据生产版本 将生产订单拆分成工序级别的生产工单
+            </summary>
+            <param name="cmd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.ProductionOrderController.CreateDayWorkPlan(EPAS.DataEntity.API.OPEntityCmdBase)">
+            <summary>
+            创建工序计划的日生产计划（已经存在 则更新）
+            </summary>
+            <param name="cmd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.ProductionOrderController.InsertProcessWorkPlan(EPAS.DataEntity.API.OPEntityCmdBase)">
+            <summary>
+            插入新工序计划到数据库
+            </summary>
+            <param name="cmd"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EPAS.API.Controllers.ProductionVersionComBusinessController">
+            <summary>
+            生产版本业务操作
+            </summary>
+        </member>
+        <member name="M:EPAS.API.Controllers.ProductionVersionComBusinessController.GetProductionMakeWorkOrderView(EPAS.DataEntity.API.OPEntityCmdBase)">
+            <summary>
+            返回生产版本中包含的工序；自定义 where条件 返回ProductionMakeWorkOrderView
+            </summary>
+            <param name="cmd">请求命令</param>
+            <returns></returns>
+        </member>
+        <member name="T:EPAS.API.Controllers.SAPDataHubController">
+            <summary>
+            适用于客户端框架未实现用户模块的场景
+            用户、角色、菜单
+            </summary>
+        </member>
+        <member name="M:EPAS.API.Controllers.SAPDataHubController.GetAllSapMaterials">
+            <summary>
+            返回SAP中所有物料主数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.SAPDataHubController.GetSapProductionOrder">
+            <summary>
+            返回SAP中所有物料主数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.SAPDataHubController.UpLoadProductionOrderFromMesToSap(System.Object)">
+             <summary>
+             用户登录业务
+             输入项 用户编号、用户密码
+            返回值如下：1-"用户不能为空"，2-"密码不能为空"，3-"用户不存在"，4-"密码错误"，5-"登录成功"，6-"登录失败")
+             </summary>
+             <param name="userCode"></param>
+             <param name="password"></param>
+             <returns></returns>
+        </member>
+        <member name="T:EPAS.API.Controllers.WeixinDataHubController">
+            <summary>
+            腾讯微信消息接口
+            公众号关注用户
+            </summary>
+        </member>
+        <member name="M:EPAS.API.Controllers.WeixinDataHubController.GetAllWeixinUsers(System.String)">
+            <summary>
+            返回微信公众号中关注的用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EPAS.API.Controllers.WeixinDataHubController.SendBusinessNotification(System.String,System.String)">
+            <summary>
+            发送微信公众号通知
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

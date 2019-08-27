@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <Version>2.14.0.0</Version>
+    <Description>A lightweight and high-performance Object/Relational Mapping(ORM) library.</Description>
+    <Copyright>Copyright 2016-2017.</Copyright>
+    <AssemblyVersion>2.14.0.0</AssemblyVersion>
+    <FileVersion>2.14.0.0</FileVersion>
+    <PackageId>ChloeCore.Oracle</PackageId>
+    <Company />
+    <Authors>Shuxin Qin</Authors>
+    <Product>Chloe.ORM</Product>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard1.6\.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Chloe\Chloe.csproj" />
+  </ItemGroup>
+
+</Project>

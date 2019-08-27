@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0CAE3B31-CF2E-4F55-A39F-DF056D5724E2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EPAS.DataEntity</RootNamespace>
+    <AssemblyName>EPAS.DataEntity</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entity\API\OPEntityCmdField.cs" />
+    <Compile Include="Entity\API\OPEntityCmdSaveCheck.cs" />
+    <Compile Include="Entity\API\OPEntityCmdSave.cs" />
+    <Compile Include="Entity\API\OPEntityCmdBase.cs" />
+    <Compile Include="Entity\API\OPEntityCmd.cs" />
+    <Compile Include="Entity\Common\BaseEntity.cs" />
+    <Compile Include="Entity\Common\CauseOfNonconformingProduct.cs" />
+    <Compile Include="Entity\Common\BusinessNotificationRecord.cs" />
+    <Compile Include="Entity\Common\Customer.cs" />
+    <Compile Include="Entity\Common\DataAuth.cs" />
+    <Compile Include="Entity\Common\EmployeeCapabilityMatrix.cs" />
+    <Compile Include="Entity\Common\EmployeesThirdParty.cs" />
+    <Compile Include="Entity\Common\EmployeeInfo.cs" />
+    <Compile Include="Entity\Common\MaterialNumber.cs" />
+    <Compile Include="Entity\Common\MenuInfoLanguage.cs" />
+    <Compile Include="Entity\Common\MenuInfo.cs" />
+    <Compile Include="Entity\Common\MsgFormat.cs" />
+    <Compile Include="Entity\Common\PublicCodeInfo.cs" />
+    <Compile Include="Entity\Common\QCBarCodeLock.cs" />
+    <Compile Include="Entity\Common\QCItemType.cs" />
+    <Compile Include="Entity\Common\RealLoginUserInfo.cs" />
+    <Compile Include="Entity\Common\RoleAuthManage.cs" />
+    <Compile Include="Entity\Common\Department.cs" />
+    <Compile Include="Entity\Common\RoleInfo.cs" />
+    <Compile Include="Entity\Common\RoleMenuRelationship.cs" />
+    <Compile Include="Entity\Common\SerialNumbers.cs" />
+    <Compile Include="Entity\Common\SupplierMaterialRelationship.cs" />
+    <Compile Include="Entity\Common\SupplierInfo.cs" />
+    <Compile Include="Entity\Common\UserInfo.cs" />
+    <Compile Include="Entity\Common\UserRoleRelationship.cs" />
+    <Compile Include="Entity\MES\AttendanceInfo.cs" />
+    <Compile Include="Entity\MES\CauseNGProduction.cs" />
+    <Compile Include="Entity\MES\CauseNGProductionAplly.cs" />
+    <Compile Include="Entity\MES\CauseNGPurchase.cs" />
+    <Compile Include="Entity\MES\ClassFeedMaterialRecord.cs" />
+    <Compile Include="Entity\MES\ClassGroup.cs" />
+    <Compile Include="Entity\MES\ClassReceiveMaterialPlan.cs" />
+    <Compile Include="Entity\MES\ClassReceiveMaterialRecord.cs" />
+    <Compile Include="Entity\MES\ClassWorkMaterialBatchTrace.cs" />
+    <Compile Include="Entity\MES\ProductionResourceCalendar.cs" />
+    <Compile Include="Entity\MES\RegisterWarehouseAppointment.cs" />
+    <Compile Include="Entity\MES\ClassWorkPlan.cs" />
+    <Compile Include="Entity\MES\APSTemplate.cs" />
+    <Compile Include="Entity\MES\APSTemplateDetail.cs" />
+    <Compile Include="Entity\MES\ClassWorkPlanRelationship.cs" />
+    <Compile Include="Entity\MES\FinishPacking.cs" />
+    <Compile Include="Entity\MES\FinishPackingDetail.cs" />
+    <Compile Include="Entity\MES\PostRecord.cs" />
+    <Compile Include="Entity\MES\ProduceHandoverList.cs" />
+    <Compile Include="Entity\MES\Production.cs" />
+    <Compile Include="Entity\MES\ProductionMakeMaterialBarcode.cs" />
+    <Compile Include="Entity\MES\ProductionMakeWorkOrderView.cs" />
+    <Compile Include="Entity\MES\ProductionMakeWorkOrder.cs" />
+    <Compile Include="Entity\MES\ProductionMakeWorkOrderRelation.cs" />
+    <Compile Include="Entity\MES\ProductionMaterialBarcodeRelationship.cs" />
+    <Compile Include="Entity\MES\ProductionOperationRecord.cs" />
+    <Compile Include="Entity\MES\ProductionOrderVersion.cs" />
+    <Compile Include="Entity\MES\ProductionOrderStopApplyRecord.cs" />
+    <Compile Include="Entity\MES\ProductionOrder.cs" />
+    <Compile Include="Entity\MES\ProductionOrderBatch.cs" />
+    <Compile Include="Entity\MES\ProductionPackingIntoWarhouse.cs" />
+    <Compile Include="Entity\MES\ProductionReceiveMaterialBarcode.cs" />
+    <Compile Include="Entity\MES\ProductionResource.cs" />
+    <Compile Include="Entity\MES\ProductionVersion.cs" />
+    <Compile Include="Entity\MES\QCSuspiciousProductRecord.cs" />
+    <Compile Include="Entity\MES\SampleProductionQCRecord.cs" />
+    <Compile Include="Entity\MES\ScrapNoticeInfo.cs" />
+    <Compile Include="Entity\MES\WorkOrder.cs" />
+    <Compile Include="Entity\MES\WorkOrderMaterialIn.cs" />
+    <Compile Include="Entity\MES\WorkOrderOutProduct.cs" />
+    <Compile Include="Entity\MES\WorkOrderParam.cs" />
+    <Compile Include="Entity\MES\WorkOrderPosition.cs" />
+    <Compile Include="Entity\MES\QualityControlledDocuments.cs" />
+    <Compile Include="Entity\MES\CompetitiveEquipment.cs" />
+    <Compile Include="Entity\MES\WorkOrderProductionResource.cs" />
+    <Compile Include="Entity\MES\WorkParamRecord.cs" />
+    <Compile Include="Entity\MES\WorkPosition.cs" />
+    <Compile Include="Entity\SAP\SAPProductionOrder.cs" />
+    <Compile Include="Entity\SAP\SAPMaterialNumber.cs" />
+    <Compile Include="Entity\Common\NumberDefaultValue.cs" />
+    <Compile Include="Entity\Temp\ScheduleClassWorkPlan.cs" />
+    <Compile Include="Entity\Temp\DayClassWorkPlan.cs" />
+    <Compile Include="Entity\Temp\RegisterWarehouseAppointmentTemp.cs" />
+    <Compile Include="Entity\Weixin\WXUser.cs" />
+    <Compile Include="Enum\ProductionOrderPriorityLevel.cs" />
+    <Compile Include="Enum\Sex.cs" />
+    <Compile Include="Enum\RegisterWarehouseAppointmentStatus.cs" />
+    <Compile Include="Enum\QCProcessFlag.cs" />
+    <Compile Include="Enum\SysThirdPartName.cs" />
+    <Compile Include="Enum\WorkOrderSequenceType.cs" />
+    <Compile Include="Enum\TaskSheetType.cs" />
+    <Compile Include="Enum\ProductionOrderStatus.cs" />
+    <Compile Include="Enum\QCTraceType.cs" />
+    <Compile Include="Enum\MaterialStatus.cs" />
+    <Compile Include="Enum\WhetherValue.cs" />
+    <Compile Include="Enum\ProductionResourcesType.cs" />
+    <Compile Include="Enum\ExcelTransType.cs" />
+    <Compile Include="Enum\LockStatus.cs" />
+    <Compile Include="Enum\IOStrategy.cs" />
+    <Compile Include="Enum\BusinessCode.cs" />
+    <Compile Include="Enum\LoginStatus.cs" />
+    <Compile Include="Enum\MaterialOPType.cs" />
+    <Compile Include="Enum\MaterialType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\EE.cs" />
+    <Compile Include="Utilities\SQLServer\MSSQL.cs" />
+    <Compile Include="Utilities\SQLServer\JoinRelationship.cs" />
+    <Compile Include="Utilities\SQLServer\JoinType.cs" />
+    <Compile Include="Utilities\SQLServer\MsGenerateSql.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

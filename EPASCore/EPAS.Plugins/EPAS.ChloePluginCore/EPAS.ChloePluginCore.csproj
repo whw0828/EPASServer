@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\..\EPASFramework\EPAS.Plugins\EPAS.ChloePlugin\ChloePlugin.cs" Link="ChloePlugin.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\EPAS.ComponentCore\EPAS.ComponentCore.csproj" />
+    <ProjectReference Include="..\..\EPAS.DataEntityCore\EPAS.DataEntityCore.csproj" />
+    <ProjectReference Include="..\..\EPAS.EnumCore\EPAS.EnumCore.csproj" />
+    <ProjectReference Include="..\..\EPAS.InterfaceCore\EPAS.InterfaceCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Chloe">
+      <HintPath>..\..\..\EPASFramework\EPAS.Component\Chloe\lib\netstandard2.0\Chloe.dll</HintPath>
+    </Reference>
+    <Reference Include="Chloe.SqlServer">
+      <HintPath>..\..\..\EPASFramework\EPAS.Component\Chloe\lib\netstandard2.0\Chloe.SqlServer.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

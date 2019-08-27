@@ -1,0 +1,127 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\API\OPEntityCmd.cs" Link="API\OPEntityCmd.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\API\OPEntityCmdBase.cs" Link="API\OPEntityCmdBase.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\API\OPEntityCmdField.cs" Link="API\OPEntityCmdField.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\API\OPEntityCmdSave.cs" Link="API\OPEntityCmdSave.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\API\OPEntityCmdSaveCheck.cs" Link="API\OPEntityCmdSaveCheck.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\BaseEntity.cs" Link="Entity\Common\BaseEntity.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\BusinessNotificationRecord.cs" Link="Entity\Common\BusinessNotificationRecord.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\CauseOfNonconformingProduct.cs" Link="Entity\Common\CauseOfNonconformingProduct.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\Customer.cs" Link="Entity\Common\Customer.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\DataAuth.cs" Link="Entity\Common\DataAuth.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\Department.cs" Link="Entity\Common\Department.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\EmployeeCapabilityMatrix.cs" Link="Entity\Common\EmployeeCapabilityMatrix.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\EmployeeInfo.cs" Link="Entity\Common\EmployeeInfo.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\EmployeesThirdParty.cs" Link="Entity\Common\EmployeesThirdParty.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\MaterialNumber.cs" Link="Entity\Common\MaterialNumber.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\MenuInfo.cs" Link="Entity\Common\MenuInfo.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\MenuInfoLanguage.cs" Link="Entity\Common\MenuInfoLanguage.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\MsgFormat.cs" Link="Entity\Common\MsgFormat.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\NumberDefaultValue.cs" Link="Entity\Common\NumberDefaultValue.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\PublicCodeInfo.cs" Link="Entity\Common\PublicCodeInfo.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\QCBarCodeLock.cs" Link="Entity\Common\QCBarCodeLock.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\QCItemType.cs" Link="Entity\Common\QCItemType.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\RealLoginUserInfo.cs" Link="Entity\Common\RealLoginUserInfo.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\RoleAuthManage.cs" Link="Entity\Common\RoleAuthManage.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\RoleInfo.cs" Link="Entity\Common\RoleInfo.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\RoleMenuRelationship.cs" Link="Entity\Common\RoleMenuRelationship.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\SerialNumbers.cs" Link="Entity\Common\SerialNumbers.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\SupplierInfo.cs" Link="Entity\Common\SupplierInfo.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\SupplierMaterialRelationship.cs" Link="Entity\Common\SupplierMaterialRelationship.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\UserInfo.cs" Link="Entity\Common\UserInfo.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\UserRoleRelationship.cs" Link="Entity\Common\UserRoleRelationship.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\APSTemplate.cs" Link="Entity\MES\APSTemplate.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\APSTemplateDetail.cs" Link="Entity\MES\APSTemplateDetail.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\AttendanceInfo.cs" Link="Entity\MES\AttendanceInfo.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\CauseNGProduction.cs" Link="Entity\MES\CauseNGProduction.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\CauseNGProductionAplly.cs" Link="Entity\MES\CauseNGProductionAplly.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\CauseNGPurchase.cs" Link="Entity\MES\CauseNGPurchase.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ClassFeedMaterialRecord.cs" Link="Entity\MES\ClassFeedMaterialRecord.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ClassGroup.cs" Link="Entity\MES\ClassGroup.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ClassReceiveMaterialPlan.cs" Link="Entity\MES\ClassReceiveMaterialPlan.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ClassReceiveMaterialRecord.cs" Link="Entity\MES\ClassReceiveMaterialRecord.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ClassWorkMaterialBatchTrace.cs" Link="Entity\MES\ClassWorkMaterialBatchTrace.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ClassWorkPlan.cs" Link="Entity\MES\ClassWorkPlan.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ClassWorkPlanRelationship.cs" Link="Entity\MES\ClassWorkPlanRelationship.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\CompetitiveEquipment.cs" Link="Entity\MES\CompetitiveEquipment.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\FinishPacking.cs" Link="Entity\MES\FinishPacking.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\FinishPackingDetail.cs" Link="Entity\MES\FinishPackingDetail.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\PostRecord.cs" Link="Entity\MES\PostRecord.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ProduceHandoverList.cs" Link="Entity\MES\ProduceHandoverList.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\Production.cs" Link="Entity\MES\Production.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ProductionMakeMaterialBarcode.cs" Link="Entity\MES\ProductionMakeMaterialBarcode.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ProductionMakeWorkOrder.cs" Link="Entity\MES\ProductionMakeWorkOrder.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ProductionMakeWorkOrderRelation.cs" Link="Entity\MES\ProductionMakeWorkOrderRelation.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ProductionMakeWorkOrderView.cs" Link="Entity\MES\ProductionMakeWorkOrderView.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ProductionMaterialBarcodeRelationship.cs" Link="Entity\MES\ProductionMaterialBarcodeRelationship.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ProductionOperationRecord.cs" Link="Entity\MES\ProductionOperationRecord.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ProductionOrder.cs" Link="Entity\MES\ProductionOrder.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ProductionOrderBatch.cs" Link="Entity\MES\ProductionOrderBatch.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ProductionOrderVersion.cs" Link="Entity\MES\ProductionOrderVersion.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ProductionPackingIntoWarhouse.cs" Link="Entity\MES\ProductionPackingIntoWarhouse.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ProductionReceiveMaterialBarcode.cs" Link="Entity\MES\ProductionReceiveMaterialBarcode.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ProductionResource.cs" Link="Entity\MES\ProductionResource.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ProductionResourceCalendar.cs" Link="Entity\MES\ProductionResourceCalendar.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ProductionVersion.cs" Link="Entity\MES\ProductionVersion.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\QCSuspiciousProductRecord.cs" Link="Entity\MES\QCSuspiciousProductRecord.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\QualityControlledDocuments.cs" Link="Entity\MES\QualityControlledDocuments.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\RegisterWarehouseAppointment.cs" Link="Entity\MES\RegisterWarehouseAppointment.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\SampleProductionQCRecord.cs" Link="Entity\MES\SampleProductionQCRecord.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ScrapNoticeInfo.cs" Link="Entity\MES\ScrapNoticeInfo.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\WorkOrder.cs" Link="Entity\MES\WorkOrder.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\WorkOrderMaterialIn.cs" Link="Entity\MES\WorkOrderMaterialIn.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\WorkOrderOutProduct.cs" Link="Entity\MES\WorkOrderOutProduct.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\WorkOrderParam.cs" Link="Entity\MES\WorkOrderParam.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\WorkOrderPosition.cs" Link="Entity\MES\WorkOrderPosition.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\WorkOrderProductionResource.cs" Link="Entity\MES\WorkOrderProductionResource.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\WorkParamRecord.cs" Link="Entity\MES\WorkParamRecord.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\WorkPosition.cs" Link="Entity\MES\WorkPosition.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\SAP\SAPMaterialNumber.cs" Link="Entity\SAP\SAPMaterialNumber.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Temp\DayClassWorkPlan.cs" Link="Entity\Temp\DayClassWorkPlan.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Temp\RegisterWarehouseAppointmentTemp.cs" Link="Entity\Temp\RegisterWarehouseAppointmentTemp.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Temp\ScheduleClassWorkPlan.cs" Link="Entity\Temp\ScheduleClassWorkPlan.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Weixin\WXUser.cs" Link="Entity\Weixin\WXUser.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\BusinessCode.cs" Link="Enum\BusinessCode.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\ExcelTransType.cs" Link="Enum\ExcelTransType.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\IOStrategy.cs" Link="Enum\IOStrategy.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\LockStatus.cs" Link="Enum\LockStatus.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\LoginStatus.cs" Link="Enum\LoginStatus.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\MaterialOPType.cs" Link="Enum\MaterialOPType.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\MaterialStatus.cs" Link="Enum\MaterialStatus.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\MaterialType.cs" Link="Enum\MaterialType.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\ProductionOrderPriorityLevel.cs" Link="Enum\ProductionOrderPriorityLevel.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\ProductionOrderStatus.cs" Link="Enum\ProductionOrderStatus.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\ProductionResourcesType.cs" Link="Enum\ProductionResourcesType.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\QCProcessFlag.cs" Link="Enum\QCProcessFlag.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\QCTraceType.cs" Link="Enum\QCTraceType.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\RegisterWarehouseAppointmentStatus.cs" Link="Enum\RegisterWarehouseAppointmentStatus.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\Sex.cs" Link="Enum\Sex.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\SysThirdPartName.cs" Link="Enum\SysThirdPartName.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\TaskSheetType.cs" Link="Enum\TaskSheetType.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\WhetherValue.cs" Link="Enum\WhetherValue.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\WorkOrderSequenceType.cs" Link="Enum\WorkOrderSequenceType.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Utilities\EE.cs" Link="Utilities\EE.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Utilities\SQLServer\JoinRelationship.cs" Link="Utilities\SQLServer\JoinRelationship.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Utilities\SQLServer\JoinType.cs" Link="Utilities\SQLServer\JoinType.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Utilities\SQLServer\MsGenerateSql.cs" Link="Utilities\SQLServer\MsGenerateSql.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Utilities\SQLServer\MSSQL.cs" Link="Utilities\SQLServer\MSSQL.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Entity\Common\" />
+    <Folder Include="Entity\MES\" />
+    <Folder Include="Entity\SAP\" />
+    <Folder Include="Entity\Temp\" />
+    <Folder Include="Entity\Weixin\" />
+    <Folder Include="Enum\" />
+    <Folder Include="API\" />
+    <Folder Include="Utilities\SQLServer\" />
+  </ItemGroup>
+
+</Project>

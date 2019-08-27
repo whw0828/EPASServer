@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>ChloeCore.SQLite</id>
+    <version>1.0.4</version>
+    <title>ChloeCore.SQLite</title>
+    <authors>Shuxin Qin</authors>
+    <owners>Shuxin Qin</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/shuxinqin/Chloe</projectUrl>
+    <iconUrl>http://images.cnblogs.com/cnblogs_com/so9527/860154/o_ORMicon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>SQLite database provider for Chloe Core.</description>
+    <copyright>Copyright 2016</copyright>
+    <tags>Chloe,ORM,Data,Core,SQLite</tags>
+	
+	<dependencies>
+      <group targetFramework=".NETStandard1.6">
+	   <dependency id="ChloeCore" version="1.0.4" />
+	   <dependency id="System.Data.Common" version="4.1.0" />
+      </group>
+    </dependencies>
+	
+  </metadata>
+  <files>
+   <file src="D:\WorkSpace\Chloe\src\DotNetCore\Chloe.SQLite\bin\Release\netstandard1.6\Chloe.SQLite.dll" target="lib\netstandard1.6"></file>
+  </files>
+</package>

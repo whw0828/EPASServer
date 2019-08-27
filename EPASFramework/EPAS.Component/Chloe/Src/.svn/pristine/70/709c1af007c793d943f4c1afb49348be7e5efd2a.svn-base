@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>ChloeCore.MySql</id>
+    <version>2.1.0</version>
+    <title>ChloeCore.MySql</title>
+    <authors>Shuxin Qin</authors>
+    <owners>Shuxin Qin</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/shuxinqin/Chloe</projectUrl>
+    <iconUrl>http://images.cnblogs.com/cnblogs_com/so9527/860154/o_ORMicon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>MySql database provider for Chloe Core.</description>
+    <copyright>Copyright 2016</copyright>
+    <tags>Chloe,ORM,Data,Core,MySql</tags>
+
+    <dependencies>
+      <group targetFramework=".NETStandard1.6">
+        <dependency id="ChloeCore" version="2.1.0" />
+        <dependency id="System.Data.Common" version="4.1.0" />
+      </group>
+    </dependencies>
+
+  </metadata>
+  <files>
+    <file src="bin\Release\netstandard1.6\Chloe.MySql.dll" target="lib\netstandard1.6"></file>
+  </files>
+</package>

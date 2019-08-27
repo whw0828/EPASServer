@@ -1,0 +1,108 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BaseEntityData\BaseEntityFac.cs" Link="BaseEntityData\BaseEntityFac.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\Business\APS\APSBusiness.cs" Link="Business\APS\APSBusiness.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\Business\BaseBusiness\BaseBusinessObject.cs" Link="Business\BaseBusiness\BaseBusinessObject.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\Business\BaseData\ProductionBusiness.cs" Link="Business\BaseData\ProductionBusiness.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\Business\BaseData\ProductionVersion\ProductionVersionComBusiness.cs" Link="Business\BaseData\ProductionVersion\ProductionVersionComBusiness.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\Business\ProductionOrder\ProductionOrderBusiness.cs" Link="Business\ProductionOrder\ProductionOrderBusiness.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\Business\System\SystemBusiness.cs" Link="Business\System\SystemBusiness.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\Business\System\UserRoleRelationshipBusiness.cs" Link="Business\System\UserRoleRelationshipBusiness.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BaseEntityData\BaseEntityData.cs" Link="BaseEntityData\BaseEntityData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BaseEntityData\PluginManager\PluginManager.cs" Link="BaseEntityData\PluginManager\PluginManager.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BaseEntityData\ExcelFieldParam.cs" Link="BaseEntityData\ExcelFieldParam.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\AttendanceInfoData.cs" Link="BDA\AttendanceInfoData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\CauseNGProductionApllyData.cs" Link="BDA\CauseNGProductionApllyData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\CauseNGProductionData.cs" Link="BDA\CauseNGProductionData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\CauseNGPurchaseData.cs" Link="BDA\CauseNGPurchaseData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\CauseOfNonconformingProductData.cs" Link="BDA\CauseOfNonconformingProductData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\ClassFeedMaterialRecordData.cs" Link="BDA\ClassFeedMaterialRecordData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\ClassGroupData.cs" Link="BDA\ClassGroupData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\ClassReceiveMaterialPlanData.cs" Link="BDA\ClassReceiveMaterialPlanData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\ClassReceiveMaterialRecordData.cs" Link="BDA\ClassReceiveMaterialRecordData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\ClassWorkMaterialBatchTraceData.cs" Link="BDA\ClassWorkMaterialBatchTraceData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\ClassWorkPlanAPSTemplateData.cs" Link="BDA\ClassWorkPlanAPSTemplateData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\ClassWorkPlanData.cs" Link="BDA\ClassWorkPlanData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\ClassWorkPlanRelationshipData.cs" Link="BDA\ClassWorkPlanRelationshipData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\CustomerData.cs" Link="BDA\CustomerData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\DataAuthData.cs" Link="BDA\DataAuthData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\EmployeeCapabilityMatrixData.cs" Link="BDA\EmployeeCapabilityMatrixData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\EmployeeInfoData.cs" Link="BDA\EmployeeInfoData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\FinishPackingData.cs" Link="BDA\FinishPackingData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\FinishPackingDetailData.cs" Link="BDA\FinishPackingDetailData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\MaterialNumberData.cs" Link="BDA\MaterialNumberData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\MenuInfoData.cs" Link="BDA\MenuInfoData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\MsgChannelData.cs" Link="BDA\MsgChannelData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\PostRecordData.cs" Link="BDA\PostRecordData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\ProduceHandoverListData.cs" Link="BDA\ProduceHandoverListData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\ProductionData.cs" Link="BDA\ProductionData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\ProductionMakeMaterialBarcodeData.cs" Link="BDA\ProductionMakeMaterialBarcodeData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\ProductionMakeWorkOrderData.cs" Link="BDA\ProductionMakeWorkOrderData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\ProductionMakeWorkOrderRelationData.cs" Link="BDA\ProductionMakeWorkOrderRelationData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\ProductionMaterialBarcodeRelationshipData.cs" Link="BDA\ProductionMaterialBarcodeRelationshipData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\ProductionOperationRecordData.cs" Link="BDA\ProductionOperationRecordData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\ProductionOrderBatchData.cs" Link="BDA\ProductionOrderBatchData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\ProductionOrderData.cs" Link="BDA\ProductionOrderData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\ProductionPackingIntoWarhouseData.cs" Link="BDA\ProductionPackingIntoWarhouseData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\ProductionReceiveMaterialBarcodeData.cs" Link="BDA\ProductionReceiveMaterialBarcodeData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\ProductionResourceData.cs" Link="BDA\ProductionResourceData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\ProductionVersionData.cs" Link="BDA\ProductionVersionData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\PublicCodeInfoData.cs" Link="BDA\PublicCodeInfoData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\QCBarCodeLockData.cs" Link="BDA\QCBarCodeLockData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\QCItemTypeData.cs" Link="BDA\QCItemTypeData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\QCSuspiciousProductRecordData.cs" Link="BDA\QCSuspiciousProductRecordData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\RealLoginUserInfoData.cs" Link="BDA\RealLoginUserInfoData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\RoleAuthManageData.cs" Link="BDA\RoleAuthManageData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\RoleInfoData.cs" Link="BDA\RoleInfoData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\RoleMenuRelationshipData.cs" Link="BDA\RoleMenuRelationshipData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\SampleProductionQCRecordData.cs" Link="BDA\SampleProductionQCRecordData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\ScrapNoticeInfoData.cs" Link="BDA\ScrapNoticeInfoData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\SerialNumbersData.cs" Link="BDA\SerialNumbersData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\SupplierInfoData.cs" Link="BDA\SupplierInfoData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\UserInfoData.cs" Link="BDA\UserInfoData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\UserRoleRelationshipData.cs" Link="BDA\UserRoleRelationshipData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\WorkOrderData.cs" Link="BDA\WorkOrderData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\WorkOrderMaterialInData.cs" Link="BDA\WorkOrderMaterialInData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\WorkOrderOutProductData.cs" Link="BDA\WorkOrderOutProductData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\WorkOrderParamData.cs" Link="BDA\WorkOrderParamData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\WorkOrderPositionData.cs" Link="BDA\WorkOrderPositionData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\WorkOrderProductionInstructionData.cs" Link="BDA\WorkOrderProductionInstructionData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\WorkOrderProductionResourceData.cs" Link="BDA\WorkOrderProductionResourceData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\WorkParamRecordData.cs" Link="BDA\WorkParamRecordData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\BDA\WorkPositionData.cs" Link="BDA\WorkPositionData.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\Utilities\BusinessHelper.cs" Link="Utilities\BusinessHelper.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\Utilities\DataTableHelper.cs" Link="Utilities\DataTableHelper.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.Business\License\EPASLicense.cs" Link="License\EPASLicense.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="BaseEntityData\PluginManager\" />
+    <Folder Include="BDA\" />
+    <Folder Include="Business\ProductionOrder\" />
+    <Folder Include="Business\APS\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="Business\BaseData\ProductionVersion\" />
+    <Folder Include="Business\System\" />
+    <Folder Include="Business\BaseBusiness\" />
+    <Folder Include="License\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EPAS.ComponentCore\EPAS.ComponentCore.csproj" />
+    <ProjectReference Include="..\EPAS.DataEntityCore\EPAS.DataEntityCore.csproj" />
+    <ProjectReference Include="..\EPAS.EnumCore\EPAS.EnumCore.csproj" />
+    <ProjectReference Include="..\EPAS.InterfaceCore\EPAS.InterfaceCore.csproj" />
+    <ProjectReference Include="..\EPAS.Plugins\EPAS.ChloePluginCore\EPAS.ChloePluginCore.csproj" />
+    <ProjectReference Include="..\EPAS.Plugins\EPAS.DirectSQLPluginCore\EPAS.DirectSQLPluginCore.csproj" />
+  </ItemGroup>
+
+</Project>
