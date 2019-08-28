@@ -1,0 +1,12 @@
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.InterfaceCore\bin\Debug\netcoreapp2.1\EPAS.InterfaceCore.deps.json
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.InterfaceCore\bin\Debug\netcoreapp2.1\EPAS.InterfaceCore.dll
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.InterfaceCore\bin\Debug\netcoreapp2.1\EPAS.InterfaceCore.pdb
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.InterfaceCore\bin\Debug\netcoreapp2.1\EPAS.EnumCore.dll
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.InterfaceCore\bin\Debug\netcoreapp2.1\EPAS.EnumCore.pdb
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.InterfaceCore\obj\Debug\netcoreapp2.1\EPAS.InterfaceCore.csprojAssemblyReference.cache
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.InterfaceCore\obj\Debug\netcoreapp2.1\EPAS.InterfaceCore.csproj.CoreCompileInputs.cache
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.InterfaceCore\obj\Debug\netcoreapp2.1\EPAS.InterfaceCore.AssemblyInfoInputs.cache
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.InterfaceCore\obj\Debug\netcoreapp2.1\EPAS.InterfaceCore.AssemblyInfo.cs
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.InterfaceCore\obj\Debug\netcoreapp2.1\EPAS.InterfaceCore.csproj.CopyComplete
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.InterfaceCore\obj\Debug\netcoreapp2.1\EPAS.InterfaceCore.dll
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.InterfaceCore\obj\Debug\netcoreapp2.1\EPAS.InterfaceCore.pdb

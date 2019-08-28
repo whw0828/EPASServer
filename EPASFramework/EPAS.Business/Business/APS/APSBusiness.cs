@@ -15,7 +15,7 @@ namespace FPA.Business.APS
    public  class APSBusiness
     {
         /// <summary>
-        /// 获取排程计划
+        /// 根据日期获取排程计划
         /// </summary>
         /// <param name="dtStart"></param>
         /// <param name="dtEnd"></param>

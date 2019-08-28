@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FPA</RootNamespace>
-    <AssemblyName>EPAS</AssemblyName>
+    <AssemblyName>EPASNet45</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -45,65 +45,6 @@
     <Compile Include="BaseEntityData\BaseEntityFac.cs" />
     <Compile Include="BaseEntityData\PluginManager\PluginManager.cs" />
     <Compile Include="BaseEntityData\ExcelFieldParam.cs" />
-    <Compile Include="BDA\AttendanceInfoData.cs" />
-    <Compile Include="BDA\CauseNGProductionApllyData.cs" />
-    <Compile Include="BDA\CauseNGProductionData.cs" />
-    <Compile Include="BDA\CauseNGPurchaseData.cs" />
-    <Compile Include="BDA\CauseOfNonconformingProductData.cs" />
-    <Compile Include="BDA\ClassFeedMaterialRecordData.cs" />
-    <Compile Include="BDA\ClassGroupData.cs" />
-    <Compile Include="BDA\ClassReceiveMaterialPlanData.cs" />
-    <Compile Include="BDA\ClassReceiveMaterialRecordData.cs" />
-    <Compile Include="BDA\ClassWorkMaterialBatchTraceData.cs" />
-    <Compile Include="BDA\ClassWorkPlanAPSTemplateData.cs" />
-    <Compile Include="BDA\ClassWorkPlanData.cs" />
-    <Compile Include="BDA\ClassWorkPlanRelationshipData.cs" />
-    <Compile Include="BDA\CustomerData.cs" />
-    <Compile Include="BDA\DataAuthData.cs" />
-    <Compile Include="BDA\EmployeeCapabilityMatrixData.cs" />
-    <Compile Include="BDA\EmployeeInfoData.cs" />
-    <Compile Include="BDA\FinishPackingData.cs" />
-    <Compile Include="BDA\FinishPackingDetailData.cs" />
-    <Compile Include="BDA\MaterialNumberData.cs" />
-    <Compile Include="BDA\MenuInfoData.cs" />
-    <Compile Include="BDA\MsgChannelData.cs" />
-    <Compile Include="BDA\PostRecordData.cs" />
-    <Compile Include="BDA\ProduceHandoverListData.cs" />
-    <Compile Include="BDA\ProductionData.cs" />
-    <Compile Include="BDA\ProductionMakeMaterialBarcodeData.cs" />
-    <Compile Include="BDA\ProductionMakeWorkOrderData.cs" />
-    <Compile Include="BDA\ProductionMakeWorkOrderRelationData.cs" />
-    <Compile Include="BDA\ProductionMaterialBarcodeRelationshipData.cs" />
-    <Compile Include="BDA\ProductionOperationRecordData.cs" />
-    <Compile Include="BDA\ProductionOrderBatchData.cs" />
-    <Compile Include="BDA\ProductionResourceData.cs" />
-    <Compile Include="BDA\ProductionOrderData.cs" />
-    <Compile Include="BDA\ProductionPackingIntoWarhouseData.cs" />
-    <Compile Include="BDA\ProductionReceiveMaterialBarcodeData.cs" />
-    <Compile Include="BDA\ProductionVersionData.cs" />
-    <Compile Include="BDA\PublicCodeInfoData.cs" />
-    <Compile Include="BDA\QCBarCodeLockData.cs" />
-    <Compile Include="BDA\QCItemTypeData.cs" />
-    <Compile Include="BDA\QCSuspiciousProductRecordData.cs" />
-    <Compile Include="BDA\RealLoginUserInfoData.cs" />
-    <Compile Include="BDA\RoleAuthManageData.cs" />
-    <Compile Include="BDA\RoleInfoData.cs" />
-    <Compile Include="BDA\RoleMenuRelationshipData.cs" />
-    <Compile Include="BDA\SampleProductionQCRecordData.cs" />
-    <Compile Include="BDA\ScrapNoticeInfoData.cs" />
-    <Compile Include="BDA\SerialNumbersData.cs" />
-    <Compile Include="BDA\SupplierInfoData.cs" />
-    <Compile Include="BDA\UserInfoData.cs" />
-    <Compile Include="BDA\UserRoleRelationshipData.cs" />
-    <Compile Include="BDA\WorkOrderData.cs" />
-    <Compile Include="BDA\WorkOrderMaterialInData.cs" />
-    <Compile Include="BDA\WorkOrderOutProductData.cs" />
-    <Compile Include="BDA\WorkOrderParamData.cs" />
-    <Compile Include="BDA\WorkOrderPositionData.cs" />
-    <Compile Include="BDA\WorkOrderProductionInstructionData.cs" />
-    <Compile Include="BDA\WorkOrderProductionResourceData.cs" />
-    <Compile Include="BDA\WorkParamRecordData.cs" />
-    <Compile Include="BDA\WorkPositionData.cs" />
     <Compile Include="Business\APS\APSBusiness.cs" />
     <Compile Include="Business\ProductionOrder\ProductionOrderBusiness.cs" />
     <Compile Include="Utilities\BusinessHelper.cs" />
@@ -120,6 +61,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="BDA\" />
     <Folder Include="Business\AccurateTracing\" />
     <Folder Include="Business\BarCode\" />
     <Folder Include="Business\ProductionExecution\" />

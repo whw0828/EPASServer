@@ -22,8 +22,6 @@ C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPAS.Business\bin\Debug\DapperExt
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPAS.Business\bin\Debug\Jil.xml
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPAS.Business\bin\Debug\Dapper.xml
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPAS.Business\bin\Debug\Sigil.xml
-C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Business\bin\Debug\EPAS.dll
-C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Business\bin\Debug\EPAS.pdb
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Business\bin\Debug\EPAS.ChloePlugin.dll
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Business\bin\Debug\EPAS.Component.dll
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Business\bin\Debug\EPAS.DataEntity.dll
@@ -64,5 +62,7 @@ C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Business\bin\D
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Business\obj\Debug\EPAS.Business.csprojAssemblyReference.cache
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Business\obj\Debug\EPAS.Business.csproj.CoreCompileInputs.cache
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Business\obj\Debug\EPAS.Business.csproj.CopyComplete
-C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Business\obj\Debug\EPAS.dll
-C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Business\obj\Debug\EPAS.pdb
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Business\bin\Debug\EPASNet45.dll
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Business\bin\Debug\EPASNet45.pdb
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Business\obj\Debug\EPASNet45.dll
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Business\obj\Debug\EPASNet45.pdb
