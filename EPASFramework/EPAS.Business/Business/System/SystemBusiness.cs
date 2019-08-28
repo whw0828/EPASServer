@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using EPAS.BaseEntityData;
-using EPAS.BDA;
 using EPAS.DataEntity.Enum;
 using EPAS.Business.Utilities;
 using EPAS.DataEntity.Entity.Common;
@@ -268,8 +267,9 @@ namespace EPAS.Business.UserSystem
                         result = LoginStatus.Sucess;
 
                         #region 记录实时用户登录信息
-                        RealLoginUserInfoData _RealLoginUserInfoData = new RealLoginUserInfoData();
-                        List<RealLoginUserInfo> rlList = _RealLoginUserInfoData.GetEntityByField("UserInfoId", item.UserInfoId);
+                        
+                        
+                        List<RealLoginUserInfo> rlList = BaseEntityFac.GetEntityByField<RealLoginUserInfo>("UserInfoId", item.UserInfoId);
                         if (rlList == null || rlList.Count ==0)
                         {                           
                             List<RealLoginUserInfo> insertList = new List<RealLoginUserInfo>();
@@ -280,7 +280,7 @@ namespace EPAS.Business.UserSystem
 
                             insertList.Add(rl);
 
-                            _RealLoginUserInfoData.NoTransactionOPEntitys(insertList, EOPType.Insert);
+                            BaseEntityFac.NoTransactionOPEntitys(insertList, EOPType.Insert);
 
                         }
                         #endregion

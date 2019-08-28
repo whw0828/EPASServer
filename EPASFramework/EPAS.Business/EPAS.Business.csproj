@@ -50,7 +50,6 @@
     <Compile Include="Utilities\BusinessHelper.cs" />
     <Compile Include="Utilities\DataTableHelper.cs" />
     <Compile Include="Business\BaseBusiness\BaseBusinessObject.cs" />
-    <Compile Include="Business\BaseData\ProductionBusiness.cs" />
     <Compile Include="Business\BaseData\ProductionVersion\ProductionVersionComBusiness.cs" />
     <Compile Include="Business\System\UserRoleRelationshipBusiness.cs" />
     <Compile Include="Business\System\SystemBusiness.cs" />

@@ -44,3 +44,4 @@ C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Component\obj\
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Component\obj\Debug\EPAS.Component.csproj.CopyComplete
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Component\obj\Debug\EPAS.Component.dll
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Component\obj\Debug\EPAS.Component.pdb
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASFramework\EPAS.Component\obj\Debug\EPAS.Component.csprojAssemblyReference.cache

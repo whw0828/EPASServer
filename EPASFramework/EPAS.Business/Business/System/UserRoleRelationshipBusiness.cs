@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using EPAS.BaseEntityData;
-using EPAS.BDA;
 using EPAS.Business.BaseObject;
 using EPAS.DataEntity.Enum;
 using EPAS.Business.Utilities;
 using EPAS.DataEntity.Entity.Common;
 using EPAS.DataEntity.Entity.MES;
 using EPAS.Interface.BusinessInterface;
+using FPA.BaseEntityDataFac;
 
 namespace EPAS.Business.UserSystem
 {
@@ -17,7 +17,7 @@ namespace EPAS.Business.UserSystem
     /// </summary>
     public class UserRoleRelationshipBusiness : BaseBusinessObject,IQueryData<UserRoleRelationship>
     {
-        UserRoleRelationshipData _Data = new UserRoleRelationshipData();
+        //UserRoleRelationshipData _Data = new UserRoleRelationshipData();
 
         #region 业务数据查询
         /// <summary>
@@ -27,7 +27,7 @@ namespace EPAS.Business.UserSystem
         /// <returns></returns>
         public UserRoleRelationship GetEntityById(string id)
         {
-            return _Data.GetEntityById(id);
+            return BaseEntityFac.GetEntityById<UserRoleRelationship>(id);
         }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace EPAS.Business.UserSystem
         /// <returns></returns>
         public List<UserRoleRelationship> GetAllEntitys()
         {
-            return _Data.GetAllEntitys();
+            return BaseEntityFac.GetAllEntitys<UserRoleRelationship>();
         }
 
         /// <summary>
@@ -46,7 +46,7 @@ namespace EPAS.Business.UserSystem
         /// <returns></returns>
         public List<UserRoleRelationship> GetEntityByField(string fieldName, string fieldValue)
         {
-            return _Data.GetEntityByField(fieldName, fieldValue);
+            return BaseEntityFac.GetEntityByField<UserRoleRelationship>(fieldName, fieldValue);
         }
 
         #endregion
@@ -77,7 +77,7 @@ namespace EPAS.Business.UserSystem
         /// <returns></returns>
         public List<UserRoleRelationship> RefreshBaseData()
         {
-          return _Data.GetAllEntitys();
+          return BaseEntityFac.GetAllEntitys< UserRoleRelationship>();
         }
 
         /// <summary>
@@ -88,7 +88,7 @@ namespace EPAS.Business.UserSystem
         /// <returns></returns>
         public bool DeleteBaseData(List<UserRoleRelationship> itemList)
         {
-            return _Data.NoTransactionOPEntitys(itemList, EOPType.Delete);
+            return BaseEntityFac.NoTransactionOPEntitys< UserRoleRelationship>(itemList, EOPType.Delete);
         }
 
         /// <summary>
