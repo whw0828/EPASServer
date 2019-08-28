@@ -27,15 +27,7 @@ namespace EPAS.DataEntity.Entity.MES
             get ;
             set ;
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        [DisplayName("ReceiveOrder")]
-        public int ReceiveOrder
-        {
-            get ;
-            set ;
-        }
+
         /// <summary>
         /// ClassWorkPlanId
         /// </summary>
@@ -48,11 +40,21 @@ namespace EPAS.DataEntity.Entity.MES
         /// <summary>
         /// 
         /// </summary>
-        [DisplayName("WorkOrderMaterialInId")]
-        public String WorkOrderMaterialInId
+        [DisplayName("WorkPlanNo")]
+        public String WorkPlanNo
         {
             get ;
             set ;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [DisplayName("ReceiveOrder")]
+        public int ReceiveOrder
+        {
+            get;
+            set;
         }
         /// <summary>
         /// 
@@ -66,89 +68,138 @@ namespace EPAS.DataEntity.Entity.MES
         /// <summary>
         /// 
         /// </summary>
-        [DisplayName("ProductionId")]
-        public String ProductionId
+        [DisplayName("WorkOrderNum")]
+        public String WorkOrderNum
+        {
+            get;
+            set;
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        [DisplayName("WorkOrderName")]
+        public String WorkOrderName
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [DisplayName("MaterialNum")]
+        public String MaterialNum
+        {
+            get;
+            set;
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        [DisplayName("MaterialName")]
+        public String MaterialName
+        {
+            get;
+            set;
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        [DisplayName("UseDateTime")]
+        public DateTime UseDateTime
+        {
+            get;
+            set;
+        }
+        /// <summary>
+        /// 仓库实际配送
+        /// </summary>
+        [DisplayName("SendQty")]
+        public Decimal SendQty
         {
             get ;
             set ;
         }
         /// <summary>
-        /// 
+        /// 计划领用
         /// </summary>
-        [DisplayName("MaterialNumberId")]
-        public String MaterialNumberId
+        [DisplayName("PlanQty")]
+        public Decimal PlanQty
         {
             get ;
             set ;
         }
         /// <summary>
-        /// 
+        /// 欠数
         /// </summary>
-        [DisplayName("PlanBOMQty")]
-        public Decimal PlanBOMQty
+        [DisplayName("OwnQty")]
+        public Decimal OwnQty
         {
             get ;
             set ;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [DisplayName("GraphicNo")]
+        public String GraphicNo
+        {
+            get;
+            set;
         }
         /// <summary>
         /// 
         /// </summary>
-        [DisplayName("RealPrepareBOMQty")]
-        public Decimal? RealPrepareBOMQty
+        [DisplayName("Type")]
+        public String Type
         {
-            get ;
-            set ;
+            get;
+            set;
         }
         /// <summary>
         /// 
         /// </summary>
-        [DisplayName("RealBOMQty")]
-        public Decimal? RealBOMQty
+        [DisplayName("Format")]
+        public String Format
         {
-            get ;
-            set ;
+            get;
+            set;
         }
         /// <summary>
         /// 
         /// </summary>
-        [DisplayName("PlanCRMDate")]
-        public DateTime PlanCRMDate
+        [DisplayName("UnitCode")]
+        public String UnitCode
         {
-            get ;
-            set ;
+            get;
+            set;
         }
+
         /// <summary>
-        /// 
+        /// 先进先出
         /// </summary>
-        [DisplayName("RealCRMDate")]
-        public DateTime? RealCRMDate
+        [DisplayName("IOStrategy")]
+        public int IOStrategy
         {
-            get ;
-            set ;
+            get;
+            set;
         }
+
         /// <summary>
         /// 
         /// </summary>
         [DisplayName("PlanType")]
         public int PlanType
         {
-            get ;
-            set ;
+            get;
+            set;
         }
         /// <summary>
         /// 
         /// </summary>
-        [DisplayName("Content")]
-        public String Content
-        {
-            get ;
-            set ;
-        }
-        /// <summary>
-        /// 
-        /// </summary>
-        [DisplayName("CRMState")]
-        public int? CRMState
+        [DisplayName("CRMStatus")]
+        public int CRMStatus
         {
             get ;
             set ;
@@ -157,7 +208,7 @@ namespace EPAS.DataEntity.Entity.MES
         /// 
         /// </summary>
         [DisplayName("HandoverStatus")]
-        public int? HandoverStatus
+        public int HandoverStatus
         {
             get ;
             set ;
@@ -171,5 +222,15 @@ namespace EPAS.DataEntity.Entity.MES
             get ;
             set ;
         }
-}
+
+        /// <summary>
+        /// 备注
+        /// </summary>
+        [DisplayName("Comment")]
+        public String Comment
+        {
+            get;
+            set;
+        }
+    }
 }
