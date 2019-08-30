@@ -54,6 +54,7 @@
     <Compile Include="Entity\Common\EmployeeCapabilityMatrix.cs" />
     <Compile Include="Entity\Common\EmployeesThirdParty.cs" />
     <Compile Include="Entity\Common\EmployeeInfo.cs" />
+    <Compile Include="Entity\Common\PurchasedMaterialsGuidance.cs" />
     <Compile Include="Entity\Common\MaterialNumber.cs" />
     <Compile Include="Entity\Common\MenuInfoLanguage.cs" />
     <Compile Include="Entity\Common\MenuInfo.cs" />

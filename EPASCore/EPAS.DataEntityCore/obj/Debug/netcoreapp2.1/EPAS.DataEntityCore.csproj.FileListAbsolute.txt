@@ -6,3 +6,4 @@ C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.DataEntityCore\obj\
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.DataEntityCore\obj\Debug\netcoreapp2.1\EPAS.DataEntityCore.AssemblyInfo.cs
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.DataEntityCore\obj\Debug\netcoreapp2.1\EPAS.DataEntityCore.dll
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.DataEntityCore\obj\Debug\netcoreapp2.1\EPAS.DataEntityCore.pdb
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.DataEntityCore\obj\Debug\netcoreapp2.1\EPAS.DataEntityCore.csprojAssemblyReference.cache

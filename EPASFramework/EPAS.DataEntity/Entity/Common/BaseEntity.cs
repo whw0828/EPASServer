@@ -11,6 +11,61 @@ namespace EPAS.DataEntity.Entity.Common
 {
     public class BaseEntity
     {
+        /// <summary>
+        /// 录入人工号
+        /// </summary>
+        [DisplayName("CEmployeeNum")]
+        public String CEmployeeNum
+        {
+            get;
+            set;
+        }
+        /// <summary>
+        /// 录入人姓名
+        /// </summary>
+        [DisplayName("CEmployeeName")]
+        public String CEmployeeName
+        {
+            get;
+            set;
+        }
+        /// <summary>
+        /// 录入时间
+        /// </summary>
+        [DisplayName("CreateTime")]
+        public DateTime CreateTime
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// 修改人工号
+        /// </summary>
+        [DisplayName("UEmployeeNum")]
+        public String UEmployeeNum
+        {
+            get;
+            set;
+        }
+        /// <summary>
+        /// 修改人姓名
+        /// </summary>
+        [DisplayName("UEmployeeName")]
+        public String UEmployeeName
+        {
+            get;
+            set;
+        }
+        /// <summary>
+        /// 修改时间
+        /// </summary>
+        [DisplayName("UpdateTime")]
+        public DateTime? UpdateTime
+        {
+            get;
+            set;
+        }
         //    /// <summary>
         //    /// 创建用户
         //    /// </summary>

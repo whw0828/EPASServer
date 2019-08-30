@@ -1,4 +1,5 @@
 ﻿using EPAS.Component.Utilities;
+using EPAS.DataEntity.Entity.Common;
 using EPAS.DataEntity.Entity.MES;
 using FPA.BaseEntityDataFac;
 using System;
@@ -45,6 +46,50 @@ namespace FPA.Business.APS
                 }
             }
             return scpList;
+        }
+
+        /// <summary>
+        /// 删除未使用的生产计划，如果该计划对应生产料单，则作废料单。
+        /// </summary>
+        /// <param name="itemList"></param>
+        /// <returns></returns>
+        public static  bool DeleteNotUsedPlan(List<ClassWorkPlan> itemList, string CEmployeeNum, string CEmployeeName)
+        {
+            bool result = false;
+            List<ClassReceiveMaterialPlan> crmpList = new List<ClassReceiveMaterialPlan>();
+            foreach(var item in itemList)
+            {
+                string ClassWorkPlanId = item.ClassWorkPlanId;
+                List<ClassReceiveMaterialPlan> crmpTempList = BaseEntityFac.GetEntityByField<ClassReceiveMaterialPlan>
+                    (x=>x.ClassWorkPlanId== ClassWorkPlanId);
+
+                if(crmpTempList!=null && crmpTempList.Count>0)
+                {
+                    //去掉重复料单记录
+                    crmpTempList.ForEach(x =>
+                    {
+                        ClassReceiveMaterialPlan temp = crmpList.Find(y => y.ClassReceiveMaterialPlanId == x.ClassReceiveMaterialPlanId);
+
+                        if(temp==null)
+                        {
+                            crmpList.Add(temp);
+                        }
+                    });
+                }
+            }
+
+            BaseEntityFac.TransactionOPEntitys<ClassWorkPlan>((cn, transaction) =>
+            {
+
+                result = BaseEntityFac.TransactionOPEntitysAdd<ClassWorkPlan>(cn, transaction, EOPType.Insert, itemList);
+
+                // res = BaseEntityFac.TransactionOPEntitysAdd<ProductionOrderVersion>(cn, transaction, EOPType.Update, povList);
+
+                return result;
+            });
+
+
+            return result;
         }
     }
 }

@@ -6,3 +6,4 @@ C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.EnumCore\obj\Debug\
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.EnumCore\obj\Debug\netcoreapp2.1\EPAS.EnumCore.AssemblyInfo.cs
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.EnumCore\obj\Debug\netcoreapp2.1\EPAS.EnumCore.dll
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.EnumCore\obj\Debug\netcoreapp2.1\EPAS.EnumCore.pdb
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.EnumCore\obj\Debug\netcoreapp2.1\EPAS.EnumCore.csprojAssemblyReference.cache

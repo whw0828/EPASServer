@@ -474,32 +474,6 @@ namespace EPAS.DataEntity.Entity.MES
             set ;
         }
 
-        /// <summary>
-        /// 录入人工号
-        /// </summary>
-        [DisplayName("CEmployeeNum")]
-        public String CEmployeeNum
-        {
-            get;
-            set;
-        }
-        /// <summary>
-        /// 录入人姓名
-        /// </summary>
-        [DisplayName("CEmployeeName")]
-        public String CEmployeeName
-        {
-            get;
-            set;
-        }
-        /// <summary>
-        /// 录入时间
-        /// </summary>
-        [DisplayName("CreateTime")]
-        public DateTime CreateTime
-        {
-            get;
-            set;
-        }
+
     }
 }

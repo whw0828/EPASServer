@@ -25,6 +25,7 @@
     <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\MsgFormat.cs" Link="Entity\Common\MsgFormat.cs" />
     <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\NumberDefaultValue.cs" Link="Entity\Common\NumberDefaultValue.cs" />
     <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\PublicCodeInfo.cs" Link="Entity\Common\PublicCodeInfo.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\PurchasedMaterialsGuidance.cs" Link="Entity\Common\PurchasedMaterialsGuidance.cs" />
     <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\QCBarCodeLock.cs" Link="Entity\Common\QCBarCodeLock.cs" />
     <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\QCItemType.cs" Link="Entity\Common\QCItemType.cs" />
     <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Common\RealLoginUserInfo.cs" Link="Entity\Common\RealLoginUserInfo.cs" />

@@ -1,1 +1,1 @@
-Data Source=192.168.1.228;Initial Catalog=EPAS;User Id=sa;Password=whw135063;
+Data Source=DESKTOP-1B44DF0\SQLServer;Initial Catalog=EPAS;User Id=sa;Password=whw135063;

@@ -1,0 +1,9 @@
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.EnumCore\bin\Release\netcoreapp2.1\EPAS.EnumCore.deps.json
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.EnumCore\bin\Release\netcoreapp2.1\EPAS.EnumCore.dll
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.EnumCore\bin\Release\netcoreapp2.1\EPAS.EnumCore.pdb
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.EnumCore\obj\Release\netcoreapp2.1\EPAS.EnumCore.csprojAssemblyReference.cache
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.EnumCore\obj\Release\netcoreapp2.1\EPAS.EnumCore.csproj.CoreCompileInputs.cache
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.EnumCore\obj\Release\netcoreapp2.1\EPAS.EnumCore.AssemblyInfoInputs.cache
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.EnumCore\obj\Release\netcoreapp2.1\EPAS.EnumCore.AssemblyInfo.cs
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.EnumCore\obj\Release\netcoreapp2.1\EPAS.EnumCore.dll
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\EPASCore\EPAS.EnumCore\obj\Release\netcoreapp2.1\EPAS.EnumCore.pdb

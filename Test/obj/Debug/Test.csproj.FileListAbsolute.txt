@@ -3,7 +3,6 @@ C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\Test\bin\Debug\Test.exe
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\Test\bin\Debug\Test.pdb
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\Test\bin\Debug\EPAS.Component.dll
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\Test\bin\Debug\EPAS.DataEntity.dll
-C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\Test\bin\Debug\EPAS.dll
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\Test\bin\Debug\EPAS.Enum.dll
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\Test\bin\Debug\EPAS.Interface.dll
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\Test\bin\Debug\EPAS.DirectSQLPlugin.dll
@@ -22,7 +21,6 @@ C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\Test\bin\Debug\System.ValueTuple.
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\Test\bin\Debug\Sigil.dll
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\Test\bin\Debug\NPOI.OpenXml4Net.dll
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\Test\bin\Debug\NPOI.OpenXmlFormats.dll
-C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\Test\bin\Debug\EPAS.pdb
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\Test\bin\Debug\EPAS.Component.pdb
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\Test\bin\Debug\EPAS.DataEntity.pdb
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\Test\bin\Debug\EPAS.Enum.pdb
@@ -45,3 +43,5 @@ C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\Test\obj\Debug\Test.csproj.CoreCo
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\Test\obj\Debug\Test.csproj.CopyComplete
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\Test\obj\Debug\Test.exe
 C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\Test\obj\Debug\Test.pdb
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\Test\bin\Debug\EPASNet45.dll
+C:\开发项目\MES研发项目\EPAS\EPAS\EPAS\Test\bin\Debug\EPASNet45.pdb

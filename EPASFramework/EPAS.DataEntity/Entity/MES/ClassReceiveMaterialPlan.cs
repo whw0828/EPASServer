@@ -37,11 +37,21 @@ namespace EPAS.DataEntity.Entity.MES
             get ;
             set ;
         }
+
         /// <summary>
         /// 
         /// </summary>
         [DisplayName("WorkPlanNo")]
         public String WorkPlanNo
+        {
+            get;
+            set;
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        [DisplayName("ProductionOrderNumbe")]
+        public String ProductionOrderNumbe
         {
             get ;
             set ;
@@ -232,5 +242,7 @@ namespace EPAS.DataEntity.Entity.MES
             get;
             set;
         }
+
+ 
     }
 }
