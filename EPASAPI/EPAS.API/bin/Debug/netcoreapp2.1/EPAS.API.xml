@@ -18,6 +18,13 @@
             <param name="TaskSheetType">计划类型</param>
             <returns></returns>
         </member>
+        <member name="M:EPAS.API.Controllers.APSController.GetNewPlanWorkOrderProductionResource(System.String)">
+            <summary>
+            返回工序日计划可以使用的设备信息
+            </summary>
+            <param name="WorkPlanNo">日计划编号</param>
+            <returns></returns>
+        </member>
         <member name="T:EPAS.API.Controllers.BaseEntityBusinessController">
             <summary>
             适用于基础数据实体操作

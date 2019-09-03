@@ -16,6 +16,7 @@ using EPAS.Component.Utilities;
 using EPAS.Business.BaseObject;
 using EPAS.Business.BaseData;
 using FPA.BaseEntityDataFac;
+using EPAS.DataEntity.Entity.Temp;
 
 namespace EPAS.API.Controllers
 {
@@ -41,7 +42,19 @@ namespace EPAS.API.Controllers
             return FPA.Business.APS.APSBusiness.GetScheduleClassWorkPlan(dtStart, dtEnd, TaskSheetType);
         }
 
-      
+        /// <summary>
+        /// 返回工序日计划可以使用的设备信息
+        /// </summary>
+        /// <param name="WorkPlanNo">日计划编号</param>
+        /// <returns></returns>
+        [HttpPost]
+        public  List<PlanWorkOrderProductionResource> GetNewPlanWorkOrderProductionResource(string WorkPlanNo)
+        {
+            return FPA.Business.APS.APSBusiness.GetNewPlanWorkOrderProductionResource(WorkPlanNo);
+        }
+
+
+
 
     }
 }

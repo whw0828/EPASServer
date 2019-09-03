@@ -56,6 +56,7 @@
     <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\PostRecord.cs" Link="Entity\MES\PostRecord.cs" />
     <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ProduceHandoverList.cs" Link="Entity\MES\ProduceHandoverList.cs" />
     <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\Production.cs" Link="Entity\MES\Production.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ProductionEquipmentToolingRelationship.cs" Link="Entity\MES\ProductionEquipmentToolingRelationship.cs" />
     <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ProductionMakeMaterialBarcode.cs" Link="Entity\MES\ProductionMakeMaterialBarcode.cs" />
     <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ProductionMakeWorkOrder.cs" Link="Entity\MES\ProductionMakeWorkOrder.cs" />
     <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\ProductionMakeWorkOrderRelation.cs" Link="Entity\MES\ProductionMakeWorkOrderRelation.cs" />
@@ -85,6 +86,7 @@
     <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\MES\WorkPosition.cs" Link="Entity\MES\WorkPosition.cs" />
     <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\SAP\SAPMaterialNumber.cs" Link="Entity\SAP\SAPMaterialNumber.cs" />
     <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Temp\DayClassWorkPlan.cs" Link="Entity\Temp\DayClassWorkPlan.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Temp\PlanWorkOrderProductionResource.cs" Link="Entity\Temp\PlanWorkOrderProductionResource.cs" />
     <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Temp\RegisterWarehouseAppointmentTemp.cs" Link="Entity\Temp\RegisterWarehouseAppointmentTemp.cs" />
     <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Temp\ScheduleClassWorkPlan.cs" Link="Entity\Temp\ScheduleClassWorkPlan.cs" />
     <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Entity\Weixin\WXUser.cs" Link="Entity\Weixin\WXUser.cs" />
@@ -98,6 +100,7 @@
     <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\MaterialType.cs" Link="Enum\MaterialType.cs" />
     <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\ProductionOrderPriorityLevel.cs" Link="Enum\ProductionOrderPriorityLevel.cs" />
     <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\ProductionOrderStatus.cs" Link="Enum\ProductionOrderStatus.cs" />
+    <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\ProductionResourceStatus.cs" Link="Enum\ProductionResourceStatus.cs" />
     <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\ProductionResourcesType.cs" Link="Enum\ProductionResourcesType.cs" />
     <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\QCProcessFlag.cs" Link="Enum\QCProcessFlag.cs" />
     <Compile Include="..\..\EPASFramework\EPAS.DataEntity\Enum\QCTraceType.cs" Link="Enum\QCTraceType.cs" />

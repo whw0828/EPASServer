@@ -1,6 +1,7 @@
 ﻿using EPAS.Component.Utilities;
 using EPAS.DataEntity.Entity.Common;
 using EPAS.DataEntity.Entity.MES;
+using EPAS.DataEntity.Entity.Temp;
 using FPA.BaseEntityDataFac;
 using System;
 using System.Collections.Generic;
@@ -46,6 +47,47 @@ namespace FPA.Business.APS
                 }
             }
             return scpList;
+        }
+        /// <summary>
+        /// 返回工序日计划可以使用的设备信息
+        /// </summary>
+        /// <param name="ProductionMakeWorkOrderId"></param>
+        /// <param name="ProductionVersionId"></param>
+        /// <param name="PlanQty"></param>
+        /// <returns></returns>
+        public static List<PlanWorkOrderProductionResource> GetNewPlanWorkOrderProductionResource(string WorkPlanNo)
+        {
+            ClassWorkPlan item=BaseEntityFac.GetSingleEntityByField<ClassWorkPlan>(x => x.WorkPlanNo == WorkPlanNo);
+            if(item==null)
+            {
+                return null;
+            }
+            string ProductionMakeWorkOrderId = item.ProductionMakeWorkOrderId;
+            string ProductionVersionId = item.ProductionVersionId;
+
+            decimal PlanQty = item.ClassPlanQty-item.ClassRealQty;//分配欠数
+
+            if(PlanQty<0)
+            {
+                PlanQty = 0;//报工数量已经大于计划数量。注意根据实际业务调整 2019.9.2
+            }
+
+            List<PlanWorkOrderProductionResource> itemList = new List<PlanWorkOrderProductionResource>();
+
+            List<WorkOrderProductionResource> itemSourceList=BaseEntityFac.GetEntityByField<WorkOrderProductionResource>(x=>x.ProductionMakeWorkOrderId== ProductionMakeWorkOrderId 
+            && x.ProductionVersionId== ProductionVersionId);
+
+            itemList = ObjectHelper.ObjectListMap<WorkOrderProductionResource, PlanWorkOrderProductionResource>(itemSourceList);
+
+            //工序只有一台设备的情况
+            if(itemList!=null && itemList.Count==1)
+            {
+                itemList.ForEach(x => {
+                    x.Qty = PlanQty;
+                });
+            }
+
+            return itemList;
         }
 
         /// <summary>

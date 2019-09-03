@@ -123,7 +123,7 @@ namespace FPA.BaseEntityDataFac
 
 
         /// <summary>
-        /// 根据实体中字段自定义查询
+        /// 根据实体中字段自定义查询 旧版本中使用；新版本中使用  GetEntityByField<T>(Expression<Func<T, bool>> infoExps) 替代
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="obj"></param>
@@ -140,6 +140,7 @@ namespace FPA.BaseEntityDataFac
 
         /// <summary>
         /// 实体中组合条件查询，直接被实际业务调用，无法进行框架级别的封装。
+        /// 适用于查询结果为多条记录的业务
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="infoExps"></param>
@@ -153,6 +154,30 @@ namespace FPA.BaseEntityDataFac
             return data.GetEntityByField(whereSql);
         }
 
+        /// <summary>
+        /// 实体中组合条件查询，直接被实际业务调用，无法进行框架级别的封装。
+        /// 适用于查询结果为单条记录的业务
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="infoExps"></param>
+        /// <returns></returns>
+        public static T GetSingleEntityByField<T>(Expression<Func<T, bool>> infoExps) where T : class
+        {
+
+            if (GetEntityByField<T>(infoExps) != null)
+            {
+                return GetEntityByField<T>(infoExps).FirstOrDefault();
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// 不建议使用，新版本中使用  GetEntityByField<T>(Expression<Func<T, bool>> infoExps) 替代
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="whereSql"></param>
+        /// <returns></returns>
         public static List<T> GetEntityByField<T>(string whereSql) where T : class
         {
             BaseEntityData<T> data = new BaseEntityData<T>();
